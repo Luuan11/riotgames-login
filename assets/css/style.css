@@ -19,3 +19,65 @@
     --colorWhite: #fff;
     --colorWhiteSecondary: #f9f9f9;
 }
+
+.section-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+    padding: clamp(35px, 8%, 70px);
+}
+
+.section-login img{
+    width: 130px;
+    margin-bottom: 80px;
+}
+
+.section-form-login h1{
+    color: var(--colorDeepGray);
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-user label{
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.login-user span{
+    position: absolute;
+    color: var(--colorMediumGray);
+    font-size: 0.8em;
+    margin: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: text;
+    transition: all 0.3s;
+}
+
+.input{
+    width: 100%;
+    outline: none;
+    border: 2px solid transparent;
+    background-color: var(--colorLightGray);
+    border-radius: 5px;
+    color: var(--colorDeepGray);
+    font-size: 0.9em;
+    padding: 25px 10px 10px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.input:focus {
+    background-color: var(--colorWhiteSecondary);
+    border: 2px solid var(--colorDeepGray);
+}
+
+.login-user .span-active{
+    font-size: 0.7em;
+    margin: 8px 10px;
+}
