@@ -30,12 +30,12 @@
     padding: clamp(35px, 8%, 70px);
 }
 
-.section-login img{
+.section-login .logo{
     width: 130px;
     margin-bottom: 80px;
 }
 
-.section-form-login h1{
+.section-form-login .section-title{
     color: var(--colorDeepGray);
     font-size: 1.5em;
     text-align: center;
@@ -81,3 +81,32 @@
     font-size: 0.7em;
     margin: 8px 10px;
 }
+
+.login-icons{
+    display: flex;
+    gap: 10px;
+    width: 105%; /* problema */
+    margin-top: 20px;
+}
+
+.login-icons img{
+    width: 20px;
+}
+
+.btn-social{
+    width: 33.33%;
+    border: none;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wallpaper {
+    width: 100%;
+    background-image: url('assets/img/wallpaper.jpg');
+}
+
+
