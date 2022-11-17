@@ -3,7 +3,6 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: "poppins", Arial, Helvetica, sans-serif;
 }
 
 :root{
@@ -20,9 +19,19 @@
     --colorWhiteSecondary: #f9f9f9;
 }
 
+body{
+    font-family: "poppins", Arial, Helvetica, sans-serif;
+    overflow-y: hidden;
+}
+
+main{
+    display: flex;
+}
+
 .section-login{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 500px;
@@ -35,6 +44,14 @@
     margin-bottom: 80px;
 }
 
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .section-title{
     color: var(--colorDeepGray);
     font-size: 1.5em;
@@ -44,7 +61,7 @@
 
 .login-user{
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     width: 100%;
 }
 
@@ -69,7 +86,7 @@
     font-size: 0.9em;
     padding: 25px 10px 10px;
     font-weight: 600;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
 }
 
 .input:focus {
@@ -149,11 +166,6 @@
     margin: 2px 6px;
 }
 
-.wallpaper {
-    width: 100%;
-    background-image: url('assets/img/wallpaper.jpg');
-}
-
 .login-btn:disabled{
     cursor: auto;
     background-color: white;
@@ -183,4 +195,19 @@
     fill: #fafafa;
 }
 
+.section-link{
+    text-decoration: none;
+    color: var(--colorMediumGray);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.wallpaper{
+    width: 100%;
+    background-image: url('../img/wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
 
