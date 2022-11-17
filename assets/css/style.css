@@ -35,14 +35,14 @@
     margin-bottom: 80px;
 }
 
-.section-form-login .section-title{
+.section-title{
     color: var(--colorDeepGray);
     font-size: 1.5em;
     text-align: center;
     margin-bottom: 30px;
 }
 
-.login-user label{
+.login-user{
     display: flex;
     margin-bottom: 20px;
     width: 100%;
@@ -85,7 +85,7 @@
 .login-icons{
     display: flex;
     gap: 10px;
-    width: 105%; /* problema */
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -103,6 +103,20 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+.login-icons .btn-social:nth-child(3){
+    background-color: var(--colorBlack);
+}
+
+.login-icons .btn-social:nth-child(2){
+    background-color: var(--colorLightGray);
+}
+
+.login-icons .btn-social:nth-child(1){
+    background-color: var(--colorLightBlue);
+}
+
+
 
 .wallpaper {
     width: 100%;
