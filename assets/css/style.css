@@ -116,11 +116,71 @@
     background-color: var(--colorLightBlue);
 }
 
+.section-checkbox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: .9em;
+    margin: 15px 0 50px;
+}
 
+#input-checkbox{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: var(--colorLightGray);
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+#input-checkbox:checked{
+    background-color: var(--colorMediumGray);
+}
+
+#input-checkbox:checked::after{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 9px;
+    border: 3px solid #fafafa;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    margin: 2px 6px;
+}
 
 .wallpaper {
     width: 100%;
     background-image: url('assets/img/wallpaper.jpg');
+}
+
+.login-btn:disabled{
+    cursor: auto;
+    background-color: white;
+    border: 2px solid var(--colorLightGray);
+}
+
+.login-btn:disabled svg{
+    fill: var(--colorMediumGray);
+}
+
+.login-btn{
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: #cf3c3f;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-btn svg{
+    fill: #fafafa;
 }
 
 
