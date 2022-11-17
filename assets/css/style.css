@@ -3,6 +3,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root{
@@ -21,7 +22,6 @@
 
 body{
     font-family: "poppins", Arial, Helvetica, sans-serif;
-    overflow-y: hidden;
 }
 
 main{
@@ -152,7 +152,7 @@ main{
 }
 
 #input-checkbox:checked{
-    background-color: var(--colorMediumGray);
+    background-color: var(--colorLightRed);
 }
 
 #input-checkbox:checked::after{
